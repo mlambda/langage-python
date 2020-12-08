@@ -1,4 +1,4 @@
-# Boucles et comparaisons
+# Boucles et comparaisons{#sec:boucles-et-comparaisons}
 
 ## Boucles for
 

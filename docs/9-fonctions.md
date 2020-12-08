@@ -1,4 +1,4 @@
-# Fonctions
+# Fonctions{#sec:fonctions}
 
 ## Principe et généralités
 

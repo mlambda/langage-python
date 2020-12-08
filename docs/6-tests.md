@@ -1,4 +1,4 @@
-# Tests
+# Tests{#sec:tests}
 
 ## Définition
 

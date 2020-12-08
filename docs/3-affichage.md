@@ -1,4 +1,4 @@
-# Affichage
+# Affichage{#sec:affichage}
 
 ## La fonction `print()`
 

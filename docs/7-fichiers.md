@@ -1,4 +1,4 @@
-# Fichiers
+# Fichiers{#sec:fichiers}
 
 ## Lecture dans un fichier
 
