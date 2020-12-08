@@ -1,7 +1,7 @@
 import panflute
 
 
-admonitions = frozenset(["remarque", "conseil", "attention"])
+admonitions = frozenset(["remarque", "conseils", "attention"])
 
 
 def action(elem, doc):
@@ -21,4 +21,3 @@ def main(doc=None):
 
 if __name__ == "__main__":
     main()
-    

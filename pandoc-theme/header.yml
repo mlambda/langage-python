@@ -37,11 +37,10 @@ header-includes: |
       title=Attention]}%
       {\endtcolorbox}
 
-  \newenvironment{block}[1]{%
+  \newenvironment{conseils}{%
       \tcolorbox[beamer,%
       noparskip,breakable,
-      colback=blue,colframe=blue,%
-      colbacklower=blue,%
-      title={#1}]}%
+      colback=blue!25!white,colframe=blue!50!black,%
+      title=Conseils]}%
       {\endtcolorbox}
 ---
