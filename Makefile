@@ -1,6 +1,6 @@
 all:
 	mkdir -p build
-	ln -fs "$(PWD)/img" "$(PWD)/build/img"
+	ln -fs "$(PWD)/img" "$(PWD)/build"
 	cp pandoc-theme/header.yml build/merged.md
 	(echo; cat docs/index.md) >> build/merged.md
 	cd docs && find . -regex ".*[0-9]+.*" -print0 | sort -zg | xargs -0I {} sh -c "(echo; cat {}) >> ../build/merged.md"
