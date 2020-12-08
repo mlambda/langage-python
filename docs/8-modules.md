@@ -334,7 +334,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'zoo3.txt'
 
 La lecture de la partie suivante va nous permettre d'améliorer notre script `compte_lignes.py`.
 
-## Module os&nbsp;: interaction avec le système d'exploitation
+## Module `os`&nbsp;: interaction avec le système d'exploitation
 
 Le module [`os`](https://docs.python.org/fr/3/library/os.html#module-os) gère l'interface avec le système d'exploitation.
 
