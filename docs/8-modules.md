@@ -213,7 +213,6 @@ Il existe une série de modules que vous serez probablement amenés à utiliser 
 - [`random`](https://docs.python.org/fr/3/library/random.html#module-random)&nbsp;: génération de nombres aléatoires.
 - [`time`](https://docs.python.org/fr/3/library/time.html#module-time)&nbsp;: accès à l'heure de l'ordinateur et aux fonctions gérant le temps.
 - [`urllib`](https://docs.python.org/fr/3/library/urllib.html#module-urllib)&nbsp;: récupération de données sur internet depuis Python.
-- [`Tkinter`](https://docs.python.org/fr/3/library/tkinter.html#module-tkinter)&nbsp;: interface python avec Tk. Création d'objets graphiques (cf. chapitre 20 Fenêtres graphiques et Tkinter).
 - [`re`](https://docs.python.org/fr/3/library/re.html#module-re)&nbsp;: gestion des expressions régulières (cf. chapitre 16 Expressions régulières et parsing*).
 
 Nous vous conseillons d'aller explorer les pages de ces modules pour découvrir toutes leurs potentialités.

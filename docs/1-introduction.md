@@ -15,8 +15,7 @@ Ce langage de programmation présente de nombreuses caractéristiques intéressa
 - C'est un langage de haut niveau. Il demande relativement peu de connaissance sur le fonctionnement d'un ordinateur pour être utilisé.
 - C'est un langage interprété. Un script Python n'a pas besoin d'être compilé pour être exécuté, contrairement à des langages comme le C ou le C++.
 - Il est orienté objet. C'est-à-dire qu'il est possible de concevoir en Python des entités qui miment celles du monde réel (une cellule, une protéine, un atome, etc.) avec un certain nombre de règles de fonctionnement et d'interactions.
-- Il est relativement simple à prendre en main1.
-- Enfin, il est très utilisé en bioinformatique et plus généralement en analyse de données.
+- Il est relativement simple à prendre en main.
 
 Toutes ces caractéristiques font que Python est désormais enseigné dans de nombreuses formations, depuis l'enseignement secondaire jusqu'à l'enseignement supérieur.
 
@@ -26,15 +25,13 @@ Pour apprendre la programmation Python, il va falloir que vous pratiquiez et pou
 
 ### Python 2 ou Python 3
 
-Ce cours est basé sur la **version 3 de Python**, qui est désormais le standard.
-
-Si, néanmoins, vous deviez un jour travailler sur un ancien programme écrit en Python 2, sachez qu'il existe quelques différences importantes entre Python 2 et Python 3. Le chapitre 21 *Remarques complémentaires* vous apportera plus de précisions.
+Ce cours est basé sur la **version 3 de Python**, qui est désormais le standard. Python 2 n'est officiellement plus maintenu depuis début 2020.
 
 ### Miniconda
 
 Nous vous conseillons d'installer [Miniconda](https://conda.io/miniconda.html), logiciel gratuit, disponible pour Windows, Mac OS X et Linux, et qui installera pour vous Python 3.
 
-Avec le gestionnaire de paquets conda, fourni avec Miniconda, vous pourrez installer des modules supplémentaires qui sont très utiles en bioinformatique (*NumPy*, *scipy*, *matplotlib*, *pandas*, *Biopython*), mais également les *notebooks* Jupyter. Vous trouverez en [ligne](https://python.sdv.univ-paris-diderot.fr/livre-dunod) une documentation pas à pas pour installer Miniconda, Python 3 et les modules supplémentaires qui seront utilisés dans ce cours.
+Avec le gestionnaire de paquets conda, fourni avec Miniconda, vous pourrez installer des modules supplémentaires qui sont très utiles en analyse de données (*NumPy*, *scipy*, *matplotlib*, *pandas*), ainsi les *notebooks* Jupyter. Vous trouverez en [ligne](https://python.sdv.univ-paris-diderot.fr/livre-dunod) une documentation pas à pas pour installer Miniconda, Python 3 et les modules supplémentaires qui seront utilisés dans ce cours.
 
 ### Éditeur de texte
 

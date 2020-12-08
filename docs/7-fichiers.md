@@ -373,8 +373,4 @@ plt.savefig("spirale.png")
 
 Visualisez l'image `spirale.png` ainsi créée.
 
-<div class="remarque">
-Le module matplotlib est utilisé ici pour la visualisation de la spirale. Son utilisation est détaillée dans le chapitre 17 Quelques modules d'intérêt en bioinformatique.
-</div>
-
 Essayez de jouer sur les paramètres $\theta$ et $r$, et leur pas d'incrémentation, pour construire de nouvelles spirales.

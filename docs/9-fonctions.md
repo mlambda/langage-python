@@ -456,7 +456,3 @@ plt.savefig("sin2ori.png")
 ```
 
 Ouvrez l'image `sin2ori.png`.
-
-<div class="remarque">
-Le module `matplotlib` sera expliqué en détail dans le chapitre 17 Quelques modules d'intérêt en bioinformatique.
-</div>
