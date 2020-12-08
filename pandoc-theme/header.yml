@@ -1,0 +1,47 @@
+---
+title: Langage Python
+subtitle: Support de formation
+author: Hugo Mougard
+mainfont: Fira Sans Light
+sansfont: Fira Sans Light
+monofont: Fira Mono
+papersize: a4
+lang: fr-FR
+urlcolor: blue
+polyglossia-lang:
+  name: french
+  options:
+    - frenchitemlabels=true
+geometry:
+  - left=2cm
+  - top=2cm
+  - bottom=2cm
+  - right=2cm
+documentclass: book
+classoption: oneside
+header-includes: |
+  \usepackage{tcolorbox}
+  \tcbuselibrary{skins,breakable}
+
+  \newenvironment{remarque}{%
+      \tcolorbox[beamer,%
+      noparskip,breakable,
+      colback=green!25!white,colframe=green!50!black,%
+      title=Remarque]}%
+      {\endtcolorbox}
+
+  \newenvironment{attention}{%
+      \tcolorbox[beamer,%
+      noparskip,breakable,
+      colback=red!25!white,colframe=red!50!black,%
+      title=Attention]}%
+      {\endtcolorbox}
+
+  \newenvironment{block}[1]{%
+      \tcolorbox[beamer,%
+      noparskip,breakable,
+      colback=blue,colframe=blue,%
+      colbacklower=blue,%
+      title={#1}]}%
+      {\endtcolorbox}
+---
