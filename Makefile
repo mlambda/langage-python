@@ -10,7 +10,7 @@ all:
 		--template pandoc-theme/default.latex \
 		--toc \
 		--toc-depth=2 \
-		--highlight-style zenburn \
+		--highlight-style breezedark \
 		--pdf-engine=xelatex \
 		--from markdown+grid_tables+table_captions \
 		--to latex \
