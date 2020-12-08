@@ -21,6 +21,7 @@ documentclass: book
 classoption: oneside
 header-includes: |
   \usepackage{tcolorbox}
+  \usepackage{cleveref}
   \tcbuselibrary{skins,breakable}
 
   \newenvironment{remarque}{%
@@ -42,5 +43,12 @@ header-includes: |
       noparskip,breakable,
       colback=blue!25!white,colframe=blue!50!black,%
       title=Conseils]}%
+      {\endtcolorbox}
+
+  \newenvironment{definition}{%
+      \tcolorbox[beamer,%
+      noparskip,breakable,
+      colback=yellow!25!white,colframe=yellow!50!black,%
+      title=Définition]}%
       {\endtcolorbox}
 ---

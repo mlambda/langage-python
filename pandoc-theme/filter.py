@@ -1,7 +1,7 @@
 import panflute
 
 
-admonitions = frozenset(["remarque", "conseils", "attention"])
+admonitions = frozenset(["remarque", "conseils", "attention", "definition"])
 
 
 def action(elem, doc):
