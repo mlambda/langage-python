@@ -144,7 +144,7 @@ Dans ce dernier cas, le mot-clé `global` a forcé la variable `x` à être glob
 ## Portée des listes
 
 <div class="attention">
-Les exemples de cette partie représentent des absurdités en termes de programmation. Ils sont donnés à titre indicatif pour comprendre ce qui se passe, mais il ne faut surtout pas s'en inspirer !
+Les exemples de cette partie représentent des absurdités en termes de programmation. Ils sont donnés à titre indicatif pour comprendre ce qui se passe, mais il ne faut surtout pas s'en inspirer&nbsp;!
 </div>
 
 Soyez extrêmement attentifs avec les types modifiables (tels que les listes) car vous pouvez les changer au sein d'une fonction&nbsp;:
@@ -192,7 +192,7 @@ Dans ces deux derniers exemples, une copie de `y` est créée à la volée lorsq
 
 ## Règle LGI
 
-Lorsque Python rencontre une variable, il va traiter la résolution de son nom avec des priorités particulières. D'abord il va regarder si la variable est locale, puis si elle n'existe pas localement, il vérifiera si elle est globale et enfin si elle n'est pas globale, il testera si elle est interne (par exemple la fonction len() est considérée comme une fonction interne à Python, elle existe à chaque fois que vous lancez Python). On appelle cette règle la règle LGI pour locale, globale, interne. En voici un exemple&nbsp;:
+Lorsque Python rencontre une variable, il va traiter la résolution de son nom avec des priorités particulières. D'abord il va regarder si la variable est **locale**, puis si elle n'existe pas localement, il vérifiera si elle est **globale** et enfin si elle n'est pas globale, il testera si elle est **interne** (par exemple la fonction `len()` est considérée comme une fonction interne à Python, elle existe à chaque fois que vous lancez Python). On appelle cette règle la règle **LGI** pour locale, globale, interne. En voici un exemple&nbsp;:
 
 ```python
 >>> def ma_fonction():
@@ -206,37 +206,50 @@ Dans la fonction x vaut  4
 Dans le module principal x vaut -15
 ```
 
-Dans la fonction, x a pris la valeur qui lui était définie localement en priorité sur la valeur définie dans le module principal.
+Dans la fonction, `x` a pris la valeur qui lui était définie localement en priorité sur la valeur définie dans le module principal.
 
-Conseils
+<div class="conseils">
+Même si Python peut reconnaître une variable ayant le même nom que ses propres fonctions ou variables internes, évitez de les utiliser car ceci rendra votre code confus&nbsp;!
+</div>
 
-Même si Python peut reconnaître une variable ayant le même nom que ses propres fonctions ou variables internes, évitez de les utiliser car ceci rendra votre code confus !
-
-De manière générale la règle LGI découle de la manière dont Python gère ce que l'on appelle « les espaces de noms ». C'est cette gestion qui définit la portée (visibilité) de chaque variable. Nous en parlerons plus longuement dans le chapitre 19 Avoir la classe avec les objets.
+De manière générale la règle LGI découle de la manière dont Python gère ce que l'on appelle «&nbsp;les espaces de noms&nbsp;». C'est cette gestion qui définit la portée (visibilité) de chaque variable. Nous en parlerons plus longuement dans le chapitre 19 Avoir la classe avec les objets.
 
 ## Recommandations
 
 ### Évitez les variables globales
 
-Dans ce chapitre nous avons joué avec les fonctions (et les listes) afin de vous montrer comment Python réagissait. Toutefois, notez bien que l'utilisation de variables globales est à bannir définitivement de votre pratique de la programmation.
+Dans ce chapitre nous avons *joué* avec les fonctions (et les listes) afin de vous montrer comment Python réagissait. Toutefois, notez bien que **l'utilisation de variables globales est à bannir définitivement de votre pratique de la programmation**.
 
-Parfois on veut faire vite et on crée une variable globale visible partout dans le programme (donc dans toutes les fonctions), car « Ça va plus vite, c'est plus simple ». C'est un très mauvais calcul, ne serait-ce que parce que vos fonctions ne seront pas réutilisables dans un autre contexte si elles utilisent des variables globales ! Ensuite, arriverez-vous à vous relire dans six mois&nbsp;? Quelqu'un d'autre pourrait-il comprendre votre programme&nbsp;? Il existe de nombreuses autres raisons que nous ne développerons pas ici, mais libre à vous de consulter de la documentation externe.
+Parfois on veut faire vite et on crée une variable globale visible partout dans le programme (donc dans toutes les fonctions), car *«&nbsp;Ça va plus vite, c'est plus simple&nbsp;»*. C'est un très mauvais calcul, ne serait-ce que parce que vos fonctions ne seront pas réutilisables dans un autre contexte si elles utilisent des variables globales&nbsp;! Ensuite, arriverez-vous à vous relire dans six mois&nbsp;? Quelqu'un d'autre pourrait-il comprendre votre programme&nbsp;? Il existe de nombreuses autres [raisons](http://wiki.c2.com/?GlobalVariablesAreBad) que nous ne développerons pas ici, mais libre à vous de consulter de la documentation externe.
 
-Heureusement, Python est orienté objet et permet « d'encapsuler » des variables dans des objets et de s'affranchir définitivement des variables globales (nous verrons cela dans le chapitre 19 Avoir la classe avec les objets). En attendant, et si vous ne souhaitez pas aller plus loin sur les notions d'objet (on peut tout à fait « pythonner » sans cela), retenez la chose suivante sur les fonctions et les variables globales&nbsp;:
+Heureusement, Python est orienté objet et permet «&nbsp;d'encapsuler&nbsp;» des variables dans des objets et de s'affranchir définitivement des variables globales (nous verrons cela dans le chapitre 19 Avoir la classe avec les objets). En attendant, et si vous ne souhaitez pas aller plus loin sur les notions d'objet (on peut tout à fait «&nbsp;pythonner&nbsp;» sans cela), retenez la chose suivante sur les fonctions et les variables globales&nbsp;:
 
-Conseils
-
+<div class="conseils">
 Plutôt que d'utiliser des variables globales, passez vos variables explicitement aux fonctions comme des argument(s).
+</div>
 
-## Modification d'une liste dans une fonction
+## Modifications sur place ou création d'un nouvel objet
 
-Concernant les fonctions qui modifient une liste, nous vous conseillons de l'indiquer clairement dans votre code. Pour cela, faites en sorte que la fonction renvoie la liste modifiée et de récupérer cette liste renvoyée dans une variable portant le même nom. Par exemple&nbsp;:
+Concernant les fonctions qui modifient un objet mutable (une liste par exemple), vous avez deux options&nbsp;:
 
-```python
+- Renvoyer une copie de l'objet avec les modifications de la fonction
+- Faire les modifications sur place en modifiant l'objet et en ne renvoyant rien
+
+<div class="conseils">
+Mélanger ces deux pratiques dans un même programme est très dangereux pour la lisibilité.
+
+La première méthode est à privilégier tant que cela ne pose pas de problèmes de performance&nbsp; elle crée moins de bugs en moyenne.
+</div>
+
+Voyons ce que cela donne en pratique avec tout d'abord une version qui renvoie une nouvelle liste&nbsp;:
+
+```{.python .number-lines}
+# Version qui renvoie une nouvelle liste
 def ajoute_un(liste):
-    for i in range(len(liste)):
-        liste[i] += 1
-    return liste
+    resultat = []
+    for elem in liste:
+        resultat.append(elem + 1)
+    return resultat
 
 # Programme principal.
 liste_notes = [10, 8, 16, 7, 15]
@@ -244,11 +257,13 @@ liste_notes = ajoute_un(liste_notes)
 print(liste_notes)
 ```
 
-La ligne 8 indique que la liste liste_notes passée à la fonction est écrasée par la liste renvoyée par la fonction.
+On peut voir ici que ligne 3, on crée une nouvelle liste qu'on finira par renvoyer ligne 6.
+On doit donc récupérer cette liste dans une variable, comme on le fait ligne 10.
 
-Le code suivant produirait la même sortie&nbsp;:
+Voyons maintenant une version qui modifie sur place&nbsp;:
 
-```python
+```{.python .number-lines}
+# Version qui modifie sur place
 def ajoute_un(liste):
     for i in range(len(liste)):
         liste[i] += 1
@@ -259,20 +274,15 @@ ajoute_un(liste_notes)
 print(liste_notes)
 ```
 
-Cela reste toutefois moins intuitif car il n'est pas forcément évident de comprendre que la liste est modifiée dans la fonction en lisant la ligne 8. Dans un tel cas, il serait essentiel d'indiquer dans la documentation de la fonction que la liste est modifiée « sur place » (in place en anglais) dans la fonction. Vous verrez dans le chapitre 14 Création de modules comment documenter vos fonctions.
-
-Conseils
-
-Pour les raisons évoquées ci-dessus, nous vous conseillons de privilégier la première version&nbsp;:
-
-liste_notes = ajoute_un(liste_notes)
+On voit ici qu'on ne crée pas de copie et qu'on ne renvoie rien.
+Ligne 8, on ne doit donc pas récupérer le résultat de la fonction dans une variable.
 
 ### Conclusion
 
-Vous connaissez maintenant les fonctions sous tous leurs angles. Comme indiqué en introduction du chapitre 9, elles sont incontournables et tout programmeur se doit de les maîtriser. Voici les derniers conseils que nous pouvons vous donner&nbsp;:
+Vous connaissez maintenant les fonctions sous tous leurs angles. Comme indiqué en introduction du +@sec:fonctions, elles sont incontournables et tout programmeur se doit de les maîtriser. Voici les derniers conseils que nous pouvons vous donner&nbsp;:
 
-- Lorsque vous débutez un nouveau projet de programmation, posez-vous la question&nbsp;: « Comment pourrais-je décomposer en blocs chaque tâche à effectuer, chaque bloc pouvant être une fonction&nbsp;? ». Et n'oubliez pas que si une fonction s'avère trop complexe, vous pouvez également la décomposer en d'autres fonctions.
-- Au risque de nous répéter, forcez-vous à utiliser des fonctions en permanence. Pratiquez, pratiquez... et pratiquez encore !
+- Lorsque vous débutez un nouveau projet de programmation, posez-vous la question&nbsp;: «&nbsp;Comment pourrais-je décomposer en blocs chaque tâche à effectuer, chaque bloc pouvant être une fonction&nbsp;?&nbsp;». Et n'oubliez pas que si une fonction s'avère trop complexe, vous pouvez également la décomposer en d'autres fonctions.
+- Au risque de nous répéter, forcez-vous à utiliser des fonctions en permanence. Pratiquez, pratiquez... et pratiquez encore&nbsp;!
 
 ## Exercices
 
@@ -281,7 +291,8 @@ Vous connaissez maintenant les fonctions sous tous leurs angles. Comme indiqué 
 ### Prédire la sortie
 
 Prédisez le comportement des codes suivants, sans les recopier dans un script ni dans l'interpréteur Python&nbsp;:
-Code 1
+
+#### Code 1{-}
 
 ```python
 def hello(prenom):
@@ -293,7 +304,7 @@ hello("Patrick")
 print(x)
 ```
 
-Code 2
+#### Code 2{-}
 
 ```python
 def hello(prenom):
@@ -306,7 +317,7 @@ hello("Patrick")
 print(x)
 ```
 
-Code 3
+#### Code 3{-}
 
 ```python
 def hello(prenom):
@@ -320,7 +331,7 @@ hello("Patrick")
 print(x)
 ```
 
-Code 4
+#### Code 4{-}
 
 ```python
 def hello(prenom):
