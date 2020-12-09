@@ -200,7 +200,7 @@ print('Hello world!')
 
 ## Notion de bloc d'instructions et d'indentation
 
-En programmation, il est courant de répéter un certain nombre de choses (avec les boucles, voir le +@sec:boucles-et-comparaisons) ou d'exécuter plusieurs instructions si une condition est vraie (avec les tests, voir le chapitre 6 Tests).
+En programmation, il est courant de répéter un certain nombre de choses (avec les boucles, voir le +@sec:boucles-et-comparaisons) ou d'exécuter plusieurs instructions si une condition est vraie (avec les tests, voir le +@sec:tests).
 
 Par exemple, imaginons que nous souhaitions afficher chacune des bases d'une séquence d'ADN, les compter puis afficher le nombre total de bases à la fin. Nous pourrions utiliser l'algorithme présenté en pseudo-code dans la +@fig:indentation-bloc-instructions.
 

@@ -181,7 +181,7 @@ L'animal 3 est un(e) souris
 
 ## Comparaisons
 
-Avant de passer à une autre sorte de boucles (les boucles `while`), nous abordons tout de suite les **comparaisons**. Celles-ci seront reprises dans le chapitre 6 sur les *Tests*.
+Avant de passer à une autre sorte de boucles (les boucles `while`), nous abordons tout de suite les **comparaisons**. Celles-ci seront reprises dans le +@sec:tests.
 
 Python est capable d'effectuer toute une série de comparaisons entre le contenu de deux variables, telles que&nbsp;:
 
@@ -466,7 +466,7 @@ Avec une boucle `while`, simuler le mouvement de cette puce de l'emplacement ini
 import random
 ```
 
-Nous reverrons la signification de cette syntaxe particulière dans le chapitre 8 *Modules*.
+Nous reverrons la signification de cette syntaxe particulière dans le +@sec:modules.
 
 ### Suite de Fibonacci (exercice +++)
 

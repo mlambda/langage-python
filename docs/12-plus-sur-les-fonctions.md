@@ -171,7 +171,7 @@ De même, si vous passez une liste en argument, elle est modifiable au sein de l
 [1, -15, 3]
 ```
 
-Si vous voulez éviter ce problème, utilisez des n-uplets (ils seront présentés dans le chapitre 13 Dictionnaires et n-uplets), Python renverra une erreur car ces derniers sont non modifiables.
+Si vous voulez éviter ce problème, utilisez des n-uplets (ils seront présentés dans le +@sec:dictionnaires-n-uplets-et-ensembles), Python renverra une erreur car ces derniers sont non modifiables.
 
 Une autre solution pour éviter la modification d'une liste, lorsqu'elle est passée comme argument à une fonction, est de la passer en copie explicitement afin qu'elle reste intacte dans le programme principal.
 

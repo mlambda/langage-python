@@ -99,7 +99,7 @@ puis avec la méthode `.append()`&nbsp;:
 
 Dans l'exemple ci-dessus, nous ajoutons des éléments à une liste en utilisant l'opérateur de concaténation `+` ou la méthode `.append()`. Nous vous conseillons dans ce cas précis d'utiliser la méthode `.append()` dont la syntaxe est plus élégante.
 
-Nous reverrons en détail la méthode `.append()` dans le chapitre 11 *Plus sur les listes*.
+Nous reverrons en détail la méthode `.append()` dans le +@sec:plus-sur-les-listes.
 
 ## Indiçage négatif
 
