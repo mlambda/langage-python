@@ -9,6 +9,7 @@ for f in docs/[0-9]*(n); do
     cat "$f" >> build/merged.md
 done
 pandoc \
+    --variable date="Version du `date +%d/%m/%Y`" \
     --number-sections \
     --standalone \
     --template pandoc-theme/default.latex \
