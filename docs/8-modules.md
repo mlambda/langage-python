@@ -213,11 +213,11 @@ Il existe une série de modules que vous serez probablement amenés à utiliser 
 - [`random`](https://docs.python.org/fr/3/library/random.html#module-random)&nbsp;: génération de nombres aléatoires.
 - [`time`](https://docs.python.org/fr/3/library/time.html#module-time)&nbsp;: accès à l'heure de l'ordinateur et aux fonctions gérant le temps.
 - [`urllib`](https://docs.python.org/fr/3/library/urllib.html#module-urllib)&nbsp;: récupération de données sur internet depuis Python.
-- [`re`](https://docs.python.org/fr/3/library/re.html#module-re)&nbsp;: gestion des expressions régulières (cf. chapitre 16 Expressions régulières et parsing*).
+- [`re`](https://docs.python.org/fr/3/library/re.html#module-re)&nbsp;: gestion des expressions régulières (cf. +@sec:module-re).
 
 Nous vous conseillons d'aller explorer les pages de ces modules pour découvrir toutes leurs potentialités.
 
-Vous verrez dans le chapitre 14 Création de module comment créer votre propre module lorsque vous souhaitez réutiliser souvent vos propres fonctions.
+Vous verrez dans le +@sec:creation-de-modules comment créer votre propre module lorsque vous souhaitez réutiliser souvent vos propres fonctions.
 
 Enfin, notez qu'il existe de nombreux autres modules externes qui ne sont pas installés de base dans Python mais qui sont très utilisés dans la pratique ([Flask](https://flask.palletsprojects.com/en/1.1.x/), [Requests](https://requests.readthedocs.io/en/master/), [TensorFlow](https://www.tensorflow.org/), [scikit-learn](https://scikit-learn.org/), [Matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/), [SQLAlchemy](https://www.sqlalchemy.org/), …).
 

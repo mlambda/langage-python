@@ -212,7 +212,7 @@ Dans la fonction, `x` a pris la valeur qui lui était définie localement en pri
 Même si Python peut reconnaître une variable ayant le même nom que ses propres fonctions ou variables internes, évitez de les utiliser car ceci rendra votre code confus&nbsp;!
 </div>
 
-De manière générale la règle LGI découle de la manière dont Python gère ce que l'on appelle «&nbsp;les espaces de noms&nbsp;». C'est cette gestion qui définit la portée (visibilité) de chaque variable. Nous en parlerons plus longuement dans le chapitre 19 Avoir la classe avec les objets.
+De manière générale la règle LGI découle de la manière dont Python gère ce que l'on appelle «&nbsp;les espaces de noms&nbsp;». C'est cette gestion qui définit la portée (visibilité) de chaque variable. Nous en parlerons plus longuement dans le +@sec:avoir-la-classe-avec-les-objets.
 
 ## Recommandations
 
@@ -222,7 +222,7 @@ Dans ce chapitre nous avons *joué* avec les fonctions (et les listes) afin de v
 
 Parfois on veut faire vite et on crée une variable globale visible partout dans le programme (donc dans toutes les fonctions), car *«&nbsp;Ça va plus vite, c'est plus simple&nbsp;»*. C'est un très mauvais calcul, ne serait-ce que parce que vos fonctions ne seront pas réutilisables dans un autre contexte si elles utilisent des variables globales&nbsp;! Ensuite, arriverez-vous à vous relire dans six mois&nbsp;? Quelqu'un d'autre pourrait-il comprendre votre programme&nbsp;? Il existe de nombreuses autres [raisons](http://wiki.c2.com/?GlobalVariablesAreBad) que nous ne développerons pas ici, mais libre à vous de consulter de la documentation externe.
 
-Heureusement, Python est orienté objet et permet «&nbsp;d'encapsuler&nbsp;» des variables dans des objets et de s'affranchir définitivement des variables globales (nous verrons cela dans le chapitre 19 Avoir la classe avec les objets). En attendant, et si vous ne souhaitez pas aller plus loin sur les notions d'objet (on peut tout à fait «&nbsp;pythonner&nbsp;» sans cela), retenez la chose suivante sur les fonctions et les variables globales&nbsp;:
+Heureusement, Python est orienté objet et permet «&nbsp;d'encapsuler&nbsp;» des variables dans des objets et de s'affranchir définitivement des variables globales (nous verrons cela dans le +@sec:avoir-la-classe-avec-les-objets). En attendant, et si vous ne souhaitez pas aller plus loin sur les notions d'objet (on peut tout à fait «&nbsp;pythonner&nbsp;» sans cela), retenez la chose suivante sur les fonctions et les variables globales&nbsp;:
 
 <div class="conseils">
 Plutôt que d'utiliser des variables globales, passez vos variables explicitement aux fonctions comme des argument(s).

@@ -52,4 +52,11 @@ header-includes: |
       colback=yellow!25!white,colframe=yellow!50!black,%
       title=Définition]}%
       {\endtcolorbox}
+
+  \newenvironment{details}{%
+      \tcolorbox[beamer,%
+      noparskip,breakable,
+      colback=orange!25!white,colframe=orange!50!black,%
+      title={Pour aller plus loin}]}%
+      {\endtcolorbox}
 ---

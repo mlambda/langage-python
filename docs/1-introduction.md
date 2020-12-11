@@ -21,7 +21,7 @@ Toutes ces caractéristiques font que Python est désormais enseigné dans de no
 
 ## Conseils pour installer et configurer Python
 
-Pour apprendre la programmation Python, il va falloir que vous pratiquiez et pour cela il est préférable que Python soit installé sur votre ordinateur. La bonne nouvelle est que vous pouvez installer gratuitement Python sur votre machine, que ce soit sous Windows, Mac OS X ou Linux. Nous donnons dans cette rubrique un résumé des points importants concernant cette installation. Tous les détails et la marche à suivre pas à pas sont donnés à l'adresse [python.sdv.univ-paris-diderot.fr/livre-dunod](https://python.sdv.univ-paris-diderot.fr/livre-dunod).
+Pour apprendre la programmation Python, il va falloir que vous pratiquiez et pour cela il est préférable que Python soit installé sur votre ordinateur. La bonne nouvelle est que vous pouvez installer gratuitement Python sur votre machine, que ce soit sous Windows, Mac OS X ou Linux. Nous donnons dans cette rubrique un résumé des points importants concernant cette installation.
 
 ### Python 2 ou Python 3
 
@@ -31,11 +31,11 @@ Ce cours est basé sur la **version 3 de Python**, qui est désormais le standar
 
 Nous vous conseillons d'installer [Miniconda](https://conda.io/miniconda.html), logiciel gratuit, disponible pour Windows, Mac OS X et Linux, et qui installera pour vous Python 3.
 
-Avec le gestionnaire de paquets conda, fourni avec Miniconda, vous pourrez installer des modules supplémentaires qui sont très utiles en analyse de données (*NumPy*, *scipy*, *matplotlib*, *pandas*), ainsi les *notebooks* Jupyter. Vous trouverez en [ligne](https://python.sdv.univ-paris-diderot.fr/livre-dunod) une documentation pas à pas pour installer Miniconda, Python 3 et les modules supplémentaires qui seront utilisés dans ce cours.
+Avec le gestionnaire de paquets conda, fourni avec Miniconda, vous pourrez installer des modules supplémentaires qui sont très utiles en analyse de données (*NumPy*, *scipy*, *matplotlib*, *pandas*), ainsi que les *notebooks* Jupyter.
 
 ### Éditeur de texte
 
-L'apprentissage d'un langage informatique comme Python va nécessiter d'écrire des lignes de codes à l'aide d'un éditeur de texte. Si vous êtes débutants, on vous conseille d'utiliser *notepad++* sous Windows, *BBEdit* ou *CotEditor* sous Mac OS X et *gedit* sous Linux. La configuration de ces éditeurs de texte est détaillée dans la rubrique *Installation* de Python disponible en [ligne](https://python.sdv.univ-paris-diderot.fr/livre-dunod). Bien sur, si vous préférez d'autres éditeurs comme *Atom*, *Visual Studio Code*, *Sublime Text*, *emacs*, *vim*, *geany*... utilisez-les !
+L'apprentissage d'un langage informatique comme Python va nécessiter d'écrire des lignes de codes à l'aide d'un éditeur de texte. Si vous êtes débutants, on vous conseille d'utiliser *notepad++* sous Windows, *BBEdit* ou *CotEditor* sous Mac OS X et *gedit* sous Linux. Bien sûr, si vous préférez d'autres éditeurs comme *Atom*, *Visual Studio Code*, *Sublime Text*, *emacs*, *vim*, *geany*… utilisez-les !
 
 À toute fin utile, on rappelle que les logiciels *Microsoft Word*, *WordPad* et *LibreOffice Writer* ne sont pas des éditeurs de texte, ce sont des traitements de texte qui ne peuvent pas et ne doivent pas être utilisés pour écrire du code informatique.
 
@@ -152,7 +152,7 @@ Il existe de nombreux autres langages interprétés comme [Perl](http://www.perl
 
 Bien sûr, l'interpréteur présente vite des limites dès lors que l'on veut exécuter une suite d'instructions plus complexe. Comme tout langage informatique, on peut enregistrer ces instructions dans un fichier, que l'on appelle communément un script (ou programme) Python.
 
-Pour reprendre l'exemple précédent, ouvrez un éditeur de texte (pour choisir et configurer un éditeur de texte, reportez-vous si nécessaire à la rubrique *Installation de Python* en [ligne](https://python.sdv.univ-paris-diderot.fr/livre-dunod)) et entrez le code suivant&nbsp;:
+Pour reprendre l'exemple précédent, ouvrez un éditeur de texte et entrez le code suivant&nbsp;:
 
 ```python
 print("Hello world!")
@@ -161,7 +161,7 @@ print("Hello world!")
 Ensuite, enregistrez votre fichier sous le nom `test.py`, puis quittez l'éditeur de texte.
 
 <div class="remarque">
-  <p>L'extension de fichier standard des scripts Python est `.py`.</p>
+L'extension de fichier standard des scripts Python est `.py`.
 </div>
 
 Pour exécuter votre script, ouvrez un shell et entrez la commande&nbsp;:
@@ -183,7 +183,7 @@ Si c'est bien le cas, bravo ! Vous avez exécuté votre premier programme Python
 
 Dans un script, tout ce qui suit le caractère `#` est ignoré par Python jusqu'à la fin de la ligne et est considéré comme un commentaire.
 
-Les commentaires doivent expliquer votre code dans un langage humain. L'utilisation des commentaires est rediscutée dans le chapitre 15 *Bonnes pratiques en programmation Python*.
+Les commentaires doivent expliquer votre code dans un langage humain. L'utilisation des commentaires est rediscutée dans le @+sec:bonnes-pratiques-en-programmation-python.
 
 Voici un exemple&nbsp;:
 
@@ -210,7 +210,7 @@ Pour chaque base de la séquence ATCCGACTG, nous souhaitons effectuer deux actio
 
 Une fois qu'on aura réalisé ces deux actions sur chaque base, on pourra passer à la suite, c'est-à-dire afficher la taille de la séquence. Pour bien préciser que cet affichage se fait à la fin, donc une fois l'affichage puis le comptage de chaque base terminés, la ligne correspondante n'est pas indentée (c'est-à-dire qu'elle n'est pas décalée vers la droite).
 
-Pratiquement, l'indentation en Python doit être homogène (soit des espaces, soit des tabulations, mais pas un mélange des deux). Une indentation avec 4 espaces est le style d'indentation recommandé (voir le chapitre 15 Bonnes pratiques en programmation Python).
+Pratiquement, l'indentation en Python doit être homogène (soit des espaces, soit des tabulations, mais pas un mélange des deux). Une indentation avec 4 espaces est le style d'indentation recommandé (voir le +@sec:bonnes-pratiques-en-programmation-python).
 
 Si tout cela semble un peu complexe, ne vous inquiétez pas. Vous allez comprendre tous ces détails chapitre après chapitre.
 

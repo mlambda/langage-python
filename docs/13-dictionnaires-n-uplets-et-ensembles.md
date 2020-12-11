@@ -367,7 +367,7 @@ Attention, cela n'est vrai que dans l'interpréteur.
 </div>
 
 <div class="remarque">
-Le *underscore* est couramment utilisé dans les noms de variable pour séparer les mots et être explicite, par exemple `racine_carree` ou `liste_notes`. On verra dans le chapitre 15 Bonnes pratiques en programmation Python que ce style de nommage est appelé *snake_case*. Toutefois, il faut éviter d'utiliser les *underscores* en début et/ou en fin de nom de variable (*i.e.* `_var`, `var_`, `__var`, `__var__`). On verra au chapitre 19 Avoir la classe avec les objets que ces *underscores* ont une signification particulière.
+Le *underscore* est couramment utilisé dans les noms de variable pour séparer les mots et être explicite, par exemple `racine_carree` ou `liste_notes`. On verra dans le +@sec:bonnes-pratiques-en-programmation-python que ce style de nommage est appelé *snake_case*. Toutefois, il faut éviter d'utiliser les *underscores* en début et/ou en fin de nom de variable (*i.e.* `_var`, `var_`, `__var`, `__var__`). On verra au +@sec:avoir-la-classe-avec-les-objets que ces *underscores* ont une signification particulière.
 </div>
 
 ## Ensembles
@@ -503,7 +503,7 @@ Le module `collections` contient d'autres types de conteneurs qui peuvent se ré
 - les [dictionnaires ordonnés](https://docs.python.org/fr/3/library/collections.html#collections.OrderedDict) qui se comportent comme les dictionnaires classiques mais qui sont ordonnés ;
 - les [`defaultdict`s](https://docs.python.org/fr/3/library/collections.html#collections.defaultdict) permettant de générer des valeurs par défaut quand on demande une clé qui n'existe pas (cela évite que Python génère une erreur) ;
 - les [compteurs](https://docs.python.org/fr/3/library/collections.html#collections.Counter) dont un exemple est montré ci-dessous ;
-- les [`namedtuple`s](https://docs.python.org/fr/3/library/collections.html#collections.namedtuple) que nous évoquerons au chapitre 19 Avoir la classe avec les objets.
+- les [`namedtuple`s](https://docs.python.org/fr/3/library/collections.html#collections.namedtuple) que nous évoquerons au +@sec:avoir-la-classe-avec-les-objets.
 
 L'objet `collection.Counter()` est particulièrement intéressant et facile à utiliser. Il crée des compteurs à partir d'objets itérables, par exemple&nbsp;:
 

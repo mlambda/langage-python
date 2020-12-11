@@ -196,7 +196,7 @@ L'opérateur d'addition `+` concatène (assemble) deux chaînes de caractères.
 L'opérateur de multiplication `*` entre un nombre entier et une chaîne de caractères duplique (répète) plusieurs fois une chaîne de caractères.
 
 <div class="attention">
-  Vous observez que les opérateurs `+` et `*` se comportent différemment s'il s'agit d'entiers ou de chaînes de caractères&nbsp;: `2 + 2` est une addition alors que `"2" + "2"` est une concaténation. On appelle ce comportement **redéfinition des opérateurs**. Nous serons amenés à revoir cette notion dans le chapitre 19 *Avoir la classe avec les objets*.
+Vous observez que les opérateurs `+` et `*` se comportent différemment s'il s'agit d'entiers ou de chaînes de caractères&nbsp;: `2 + 2` est une addition alors que `"2" + "2"` est une concaténation. On appelle ce comportement **redéfinition des opérateurs**. Nous serons amenés à revoir cette notion dans le +@sec:avoir-la-classe-avec-les-objets.
 </div>
 
 ### Opérations illicites
@@ -273,12 +273,12 @@ Notez bien qu'en Python 3, la division de deux nombres entiers renvoie par défa
 ```
 
 <div class="remarque">
-  Ceci n'était pas le cas en Python 2. Pour en savoir plus sur ce point, vous pouvez consulter le chapitre 21 Remarques complémentaires.
+Ceci n'était pas le cas en Python 2. En Python 2, `/` représentait la division entière pour deux entiers (`//` en Python 3).
 </div>
 
 ## Note sur le vocabulaire et la syntaxe
 
-Nous avons vu dans ce chapitre la notion de **variable** qui est commune à tous les langages de programmation. Toutefois, Python est un langage dit «&nbsp;orienté objet&nbsp;», il se peut que dans la suite du cours nous employions le mot **objet** pour désigner une variable. Par exemple, «&nbsp;une variable de type entier&nbsp;» sera pour nous équivalent à «&nbsp;un objet de type entier&nbsp;». Nous verrons dans le chapitre 19 Avoir la classe avec les objets ce que le mot «&nbsp;objet&nbsp;» signifie réellement (tout comme le mot «&nbsp;classe&nbsp;»).
+Nous avons vu dans ce chapitre la notion de **variable** qui est commune à tous les langages de programmation. Toutefois, Python est un langage dit «&nbsp;orienté objet&nbsp;», il se peut que dans la suite du cours nous employions le mot **objet** pour désigner une variable. Par exemple, «&nbsp;une variable de type entier&nbsp;» sera pour nous équivalent à «&nbsp;un objet de type entier&nbsp;». Nous verrons dans le +@sec:avoir-la-classe-avec-les-objets ce que le mot «&nbsp;objet&nbsp;» signifie réellement (tout comme le mot «&nbsp;classe&nbsp;»).
 
 Par ailleurs, nous avons rencontré plusieurs fois des **fonctions** dans ce chapitre, notamment avec `type()`, `int()`, `float()` et `str()`. Dans le +@sec:introduction, nous avons également vu la fonction `print()`. On reconnaît qu'il s'agit d'une fonction car son nom est suivi de parenthèses (par exemple, `type()`). En Python, la syntaxe générale est `fonction()`.
 
