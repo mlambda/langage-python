@@ -5,14 +5,12 @@ subtitle: Support de formation
 author: Hugo Mougard
 mainfont: Fira Sans Light
 sansfont: Fira Sans Light
-monofont: Fira Mono
+monofont: Fira Code
 papersize: a4
 lang: fr-FR
 urlcolor: blue
 polyglossia-lang:
   name: french
-  options:
-    - frenchitemlabels=true
 geometry:
   - left=2cm
   - top=2cm
