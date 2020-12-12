@@ -1,0 +1,41 @@
+SHELL := /bin/zsh
+
+pdf: langage-python.pdf
+
+langage-python.pdf: build/main.tex
+	latexmk \
+		-pdflatex='xelatex -shell-escape -interaction=nonstopmode %O %S' \
+		-dvi- \
+		-ps- \
+		-pdf \
+		-cd \
+		build/main.tex
+	mv build/main.pdf langage-python.pdf
+
+build/main.tex:
+	mkdir -p build
+	ln -fs ../img build
+	cp pandoc-theme/header.yml build/merged.md
+	(echo; cat docs/index.md) >> build/merged.md
+	for f in docs/[0-9]*(n); do \
+		echo >> build/merged.md ; \
+		cat "$$f" >> build/merged.md ; \
+	done
+	pandoc \
+		--variable date="Version du $(shell date +%d/%m/%Y)" \
+		--number-sections \
+		--standalone \
+		--toc \
+		--toc-depth=2 \
+		--highlight-style breezedark \
+		--pdf-engine=xelatex \
+		--from markdown+grid_tables+table_captions \
+		--to latex \
+		--output build/main.tex \
+		--filter pandoc-theme/filter.py \
+		--filter pandoc-secnos \
+		--filter pandoc-fignos \
+		build/merged.md
+
+
+.PHONY: pdf
