@@ -266,32 +266,6 @@ Pour accéder à un élément de la sous-liste, on utilise un double indiçage&n
 
 On verra un peu plus loin qu'il existe en Python des dictionnaires qui sont également très pratiques pour stocker de l'information structurée. On verra aussi qu'il existe un module nommé *NumPy* qui permet de créer des listes ou des tableaux de nombres (vecteurs et matrices) et de les manipuler.
 
-## Exercices
+## Travaux pratiques
 
-*Conseil&nbsp;:* utilisez l'interpréteur Python.
-
-### Jours de la semaine
-
-Constituez une liste *semaine* contenant les 7 jours de la semaine.
-
-- À partir de cette liste, comment récupérez-vous seulement les 5 premiers jours de la semaine d'une part, et ceux du week-end d'autre part ? Utilisez pour cela l'indiçage.
-- Cherchez un autre moyen pour arriver au même résultat (*en utilisant un autre indiçage*).
-- Trouvez deux manières pour accéder au dernier jour de la semaine.
-- Inversez les jours de la semaine en une commande.
-
-### Saisons
-
-Créez 4 listes *hiver*, *printemps*, *ete* et *automne* contenant les mois correspondants à ces saisons. Créez ensuite une liste *saisons* contenant les listes *hiver*, *printemps*, *ete* et *automne*. Prévoyez ce que renvoient les instructions suivantes, puis vérifiez-le dans l'interpréteur&nbsp;:
-
-- `saisons[2]`
-- `saisons[1][0]`
-- `saisons[1:2]`
-- `saisons[:][1]`. Comment expliquez-vous ce dernier résultat ?
-
-### Table de multiplication par 9
-
-Affichez la table de multiplication par 9 en une seule commande avec les instructions `range()` et `list()`.
-
-### Nombres pairs
-
-Répondez à la question suivante en une seule commande. Combien y a-t-il de nombres pairs dans l'intervalle `[2, 10000]` inclus ?
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/11A6Z2e42AkCh7dqXc9V289U-W-Q5RE8i#forceEdit=true&sandboxMode=true).

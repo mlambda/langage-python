@@ -225,3 +225,7 @@ Pour compléter votre apprentissage de Python, n'hésitez pas à consulter d'aut
 Et pour terminer, une ressource incontournable en langue anglaise&nbsp;:
 
 - Le site [python.org](https://www.python.org). Il contient énormément d'informations et de liens sur Python. La page d'index des modules est particulièrement utile (et traduite en français).
+
+## Travaux pratiques
+
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1f-fMymCX-32xI8pTM7Kd2t26Syn57nMC#forceEdit=true&sandboxMode=true).

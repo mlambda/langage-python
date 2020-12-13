@@ -250,6 +250,34 @@ Il est également possible de définir le nombre de chiffres après la virgule. 
 6.022141e+23
 ```
 
+## Chaînes de caractères formatées (`f-string`s)
+
+Depuis Python 3.6, un raccourci de syntaxe existe pour utiliser la méthode `.format()`. Pour l'utiliser, on place un `f` devant les guillemets de la chaîne de caractères et on spécifie directement les variables à afficher dans la chaîne&nbsp;:
+
+```python
+>>> prenom = "James"
+>>> nom = "Bond"
+>>> print(f"Mon nom est {nom}, {prenom} {nom}.")
+Mon nom est Bond, James Bond.
+```
+
+Ce raccourci permet aussi de spécifier un formatage précis&nbsp;:
+
+```python
+>>> pi = 3.1415926
+>>> print(f"Pi vaut à peu près {pi:.2f}")
+Pi vaut à peu près 3.14
+```
+
+On peut même placer du python plus complexe dans les accolades&nbsp;:
+
+```python
+>>> print(f"2 et 2 valent {2 + 2}")
+2 et 2 valent 4
+```
+
+N'hésitez pas à utiliser ces `f-string`s quand la compatibilité avec Python 3.5 n'est pas un souci.
+
 ## Ancienne méthode de formatage des chaînes de caractères
 
 *Conseil&nbsp;:* Pour les débutants, vous pouvez passer cette rubrique.
@@ -293,41 +321,6 @@ la méthode `.format()` est liée à `"Joe a {} ans"` qui est un objet de type c
 
 Nous aurons de nombreuses occasions de revoir cette notation `objet.méthode()`.
 
-## Exercices
+## Travaux pratiques
 
-*Conseil&nbsp;:* utilisez l'interpréteur Python pour les exercices 2 à 5.
-
-### Affichage dans l'interpréteur et dans un programme
-
-Ouvrez l'interpréteur Python et tapez l'instruction `1 + 1`. Que se passe-t-il ?
-
-Écrivez la même chose dans un script `test.py` que vous allez créer avec un éditeur de texte. Exécutez ce script en tapant `python test.py` dans un *shell*. Que se passe-t-il ? Pourquoi ? Faites en sorte d'afficher le résultat de l'addition `1 + 1` en exécutant le script dans un *shell*.
-
-### Poly-A
-
-Générez une chaîne de caractères représentant un brin d'ADN poly-A (c'est-à-dire qui ne contient que des bases A) de 20 bases de longueur, sans taper littéralement toutes les bases.
-
-### Poly-A et poly-GC
-
-Sur le modèle de l'exercice précédent, générez en une ligne de code un brin d'ADN poly-A (AAAA...) de 20 bases suivi d'un poly-GC régulier (GCGCGC...) de 40 bases.
-
-### Pratique de l'écriture formatée
-
-En utilisant l'écriture formatée, affichez en une seule ligne les variables `a`, `b` et `c` dont les valeurs sont respectivement la chaîne de caractères `"salut"`, le nombre entier `102` et le float `10.318`. La variable `c` sera affichée avec 2 décimales.
-
-### Pratique de l'écriture formatée 2
-
-Dans un script `percGC.py`, calculez un pourcentage de GC avec l'instruction suivante&nbsp;:
-
-```python
-perc_GC = ((4500 + 2575) / 14800) * 100
-```
-
-Ensuite, affichez le contenu de la variable `perc_GC` à l'écran avec 0, 1, 2 puis 3 décimales sous forme arrondie en utilisant `.format()`. On souhaite que le programme affiche la sortie suivante&nbsp;:
-
-```default
-Le pourcentage de GC est 48     %
-Le pourcentage de GC est 47.8   %
-Le pourcentage de GC est 47.80  %
-Le pourcentage de GC est 47.804 %
-```
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/13L1KChRhH-MbWM2Wg2QDC7FoFSp2j9cv#forceEdit=true&sandboxMode=true).

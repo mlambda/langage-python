@@ -325,62 +325,6 @@ split(...)
 
 Attention à ne pas mettre les parenthèses à la suite du nom de la méthode. L'instruction correcte est `help(animaux.split)` et non pas `help(animaux.split())`.
 
-## Exercices
+## Travaux pratiques
 
-*Conseils :* pour ces exercices, créez des scripts puis exécutez-les dans un *shell*.
-
-### Parcours d'une liste de chaînes de caractères
-
-Soit la liste `['girafe', 'tigre', 'singe', 'souris']`. Avec une boucle, affichez chaque élément ainsi que sa taille (nombre de caractères).
-
-### Distance de Hamming
-
-La distance de Hamming mesure la différence entre deux séquences de même taille en comptant le nombre de positions qui, pour chaque séquence, ne correspondent pas au même élément.
-
-Créez la fonction `dist_hamming()` qui prend en argument deux chaînes de caractères et qui renvoie la distance de Hamming (sous la forme d'un entier) entre ces deux chaînes de caractères.
-
-Calculez la distance de Hamming entre les chaînes `'apprendre'` et `'aprendre'` puis entre les chaînes `'rayonner'` et `'rayoner'`.
-
-### Palindrome
-
-Un palindrome est un mot ou une phrase dont l'ordre des lettres reste le même si on le lit de gauche à droite ou de droite à gauche. Par exemple, « ressasser » et « engage le jeu que je le gagne » sont des palindromes.
-
-Créez la fonction `test_palindrome()` qui prend en argument une chaîne de caractères et qui affiche `xxx est un palindrome` si la chaîne de caractères `xxx` passée en argument est un palindrome ou `xxx n'est pas un palindrome` sinon. Pensez à vous débarrasser au préalable des majuscules et des espaces.
-
-Testez ensuite si les expressions suivantes sont des palindromes :
-
-- `radar`
-- `never odd or even`
-- `karine alla en Iran`
-- `un roc si biscornu`
-
-### Mot composable
-
-Un mot est composable à partir d'une séquence de lettres si la séquence contient toutes les lettres du mot. Chaque lettre de la séquence ne peut être utilisée qu'une seule fois. Par exemple, « coucou » est composable à partir de « uocuoceokzefhu ».
-
-Écrivez la fonction `test_composable()` qui prend en argument un mot (sous la forme d'une chaîne de caractères) et une séquence de lettres (aussi comme une chaîne de caractères) et qui affiche `Le mot xxx est composable à partir de yyy` si le mot (`xxx`) est composable à partir de la séquence de lettres (`yyy`) ou `Le mot xxx n'est pas composable à partir de yyy` sinon.
-
-Testez cette fonction avec les mots et les séquences suivantes :
-
-| Mot      | Séquence      |
-|----------|---------------|
-| python   | aophrtkny     |
-| python   | aeiouyhpq     |
-| coucou   | uocuoceokzezh |
-| fonction | nhwfnitvkloco |
-
-### Alphabet et pangramme
-
-Les codes ASCII des lettres minuscules de l'alphabet vont de 97 (lettre « a ») à 122 (lettre « z »). La fonction `chr()` prend en argument un code ASCII sous la forme d'un entier et renvoie le caractère correspondant (sous la forme d'une chaîne de caractères). Ainsi `chr(97)` renvoie `'a'`, `chr(98)` renvoie `'b'` et ainsi de suite.
-
-Créez la fonction `get_alphabet()` qui utilise une boucle et la fonction `chr()` et qui renvoie une chaîne de caractères contenant toutes les lettres de l'alphabet.
-
-Un [pangramme](http://fr.wikipedia.org/wiki/Pangramme) est une phrase comportant au moins une fois chaque lettre de l'alphabet. Par exemple, «&nbsp;Portez ce vieux whisky au juge blond qui fume&nbsp;» est un pangramme.
-
-Créez la fonction `pangramme()` qui utilise la fonction `get_alphabet()` précédente, qui prend en argument une chaîne de caractères (`xxx`) et qui renvoie `xxx est un pangramme` si cette chaîne de caractères est un pangramme ou `xxx n'est pas un pangramme` sinon. Pensez à vous débarrasser des majuscules le cas échéant.
-
-Testez ensuite si les expressions suivantes sont des pangrammes :
-
-- Portez ce vieux whisky au juge blond qui fume
-- Monsieur Jack vous dactylographiez bien mieux que votre ami Wolf
-- Buvez de ce whisky que le patron juge fameux
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1S3rXHiUf8GCHTef8PdjVE_8V5e8tsVyd#forceEdit=true&sandboxMode=true).

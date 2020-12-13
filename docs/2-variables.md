@@ -286,28 +286,6 @@ Ce qui se trouve entre les parenthèses d'une fonction est appelé **argument** 
 
 Si ces notions vous semblent obscures, ne vous inquiétez pas, au fur et à mesure que vous avancerez dans le cours, tout deviendra limpide.
 
-## Exercices
+## Travaux pratiques
 
-Conseil&nbsp;: utilisez l'interpréteur Python pour les exercices suivants.
-
-### Prédire le résultat&nbsp;: opérations
-
-Essayez de prédire le résultat de chacune des instructions suivantes, puis vérifiez-le dans l'interpréteur Python&nbsp;:
-
-- `(1 + 2) ** 3`
-- `"Da" * 4`
-- `"Da" + 3`
-- `("Pa" + "La") * 2`
-- `("Da" * 4) / 2`
-- `5 / 2`
-- `5 // 2`
-- `5 % 2`
-
-### Prédire le résultat&nbsp;: opérations et conversions de types
-
-Essayez de prédire le résultat de chacune des instructions suivantes, puis vérifiez-le dans l'interpréteur Python&nbsp;:
-
-- `str(4) * int("3")`
-- `int("3") + float("3.2")`
-- `str(3) * float("3.2")`
-- `str(3 / 4) * 2`
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1v0X31LFt_C6qvTpBbAXNg7HgHt-UxDOC#forceEdit=true&sandboxMode=true).
