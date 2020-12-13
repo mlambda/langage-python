@@ -23,7 +23,6 @@ RUN apt-get update \
     build-essential \
     curl \
     fontconfig \
-    fonts-firacode \
     latexmk \
     pandoc \
     python3-dev \
@@ -36,7 +35,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -o fonts.zip "https://fonts.google.com/download?family=Fira%20Sans" \
+RUN curl -o fonts.zip "https://fonts.google.com/download?family=Fira%20Sans|Fira%20Mono" \
     && unzip fonts.zip -d ~/.fonts \
     && fc-cache -v -f \
     && pip install pandoc-fignos pandoc-secnos 'panflute < 2'

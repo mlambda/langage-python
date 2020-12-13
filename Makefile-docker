@@ -23,6 +23,7 @@ build/main.tex:
 	done
 	pandoc \
 		--variable date="Version du $(shell date +%d/%m/%Y)" \
+		--template pandoc-theme/default.latex \
 		--number-sections \
 		--standalone \
 		--toc \
