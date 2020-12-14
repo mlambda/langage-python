@@ -521,3 +521,7 @@ Counter({'a': 7, 't': 7, 'c': 7, 'g': 5})
 ```
 
 On voit que Python a automatiquement compté chaque atgc de la chaîne de caractères passée en argument&nbsp;! Cela crée un objet de type `Counter` qui se comporte ensuite comme un dictionnaire, à une exception près&nbsp;: si on appelle une clé qui n'existe pas dans l'itérable initiale (comme le `n` ci-dessus) cela renvoie 0.
+
+## Travaux pratiques
+
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1BMAMDDgEx0TmKGF78ywVFmYyB60rVpa9#forceEdit=true&sandboxMode=true).

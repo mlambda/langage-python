@@ -351,38 +351,6 @@ Bien sûr, si on avait eu un deuxième groupe, on aurait pu le réutiliser avec 
 
 Nous espérons vous avoir convaincu de la puissance du module *re* et des expressions régulières. Alors, plus de temps à perdre, à vos *regex* !
 
+## Travaux pratiques
 
-## Exercices
-
-*Conseil* : pour ces exercices, créez des scripts puis exécutez-les dans un *shell*.
-
-
-### Nettoyeur d'espaces
-
-Le fichier [`cigale-fourmi.txt`](https://raw.githubusercontent.com/m09/langage-python/master/data/cigale-fourmi.txt) contient le célèbre poème de Jean de la Fontaine. Malheureusement, la personne qui l'a recopié a parfois mis plusieurs espaces au lieu d'un seul entre les mots.
-
-Créez un script `cigale_fourmi.py` qui grâce à une *regex* et à la fonction `sub()` remplace plusieurs espaces par un seul espace dans le texte ci-dessus. Le nouveau texte « propre » sera enregistré dans un fichier `cigale-fourmi-propre.txt`.
-
-
-### Le défi du dé-htmliseur (exercice +++)
-
-Le format HTML permet d'afficher des pages web dans un navigateur. Il s'agit d'un langage à balise qui fonctionne avec des balises ouvrantes `<balise>` et des balises fermantes `</balise>`.
-
-Créez un script `dehtmliseur.py` qui lit le fichier [`fichier-a-dehtmliser.html`](https://raw.githubusercontent.com/m09/langage-python/master/data/fichier-a-dehtmliser.html) au format HTML et qui renvoie à l'écran tout le texte de ce fichier sans les balises HTML.
-
-Nous vous conseillons tout d'abord d'ouvrir le fichier HTML dans un éditeur de texte et de bien l'observer. N'hésitez pas à vous aider des sites mentionnés dans les ressources en ligne
-
-
-### Nettoyeur de doublons (exercice +++)
-
-Téléchargez le fichier [`breves-doublons.txt`](https://raw.githubusercontent.com/m09/langage-python/master/data/breves_doublons.txt) qui contient des mots répétés deux fois. Par exemple :
-
-```default
-Le cinéma est devenu parlant, la radio radio finira en images.
-La sardine, c'est un petit petit poisson sans tête qui vit dans l'huile.
-[...]
-```
-
-Écrivez un script `ote_doublons.py` qui lit le fichier `breves-doublons.txt` et qui supprime tous les doublons à l'aide d'une *regex*. Le script affichera le nouveau texte à l'écran.
-
-*Conseil* : utilisez la méthode `.sub()`.
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1byfqmU5aVhs4Nc9bbWlvg-SdysBmkif9#forceEdit=true&sandboxMode=true).

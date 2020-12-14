@@ -265,48 +265,6 @@ Voici quelques exemples.
 [('PYTHON', 6), ('EST', 3), ('PUISSANT', 8), ('!', 1)]
 ```
 
-## Exercices
+## Travaux pratiques
 
-*Conseils&nbsp;:* pour ces exercices, créez des scripts puis exécutez-les dans un shell.
-
-### Tri de liste
-
-Soit la liste de nombres `[8, 3, 12.5, 45, 25.5, 52, 1]`. Triez les nombres de cette liste par ordre croissant, sans utiliser la fonction `sort()`. Les fonctions et méthodes `min()`, `.append()` et `.remove()` vous seront utiles.
-
-### Doublons
-
-Soit la liste de nombres liste = `[5, 1, 1, 2, 5, 6, 3, 4, 4, 4, 2]`.
-
-A partir de liste, créez une nouvelle liste sans les doublons, triez-la et affichez-la.
-
-### Le nombre mystère
-
-Trouvez le nombre mystère qui répond aux conditions suivantes&nbsp;:
-
-- *Il est composé de 3 chiffres.*
-- *Il est strictement inférieur à 300.*
-- *Il est pair.*
-- *Deux de ses chiffres sont identiques.*
-- *La somme de ses chiffres est égale à 7.*
-
-On vous propose d'employer une méthode dite *«&nbsp;brute force&nbsp;»*, c'est-à-dire d'utiliser une boucle et à chaque itération de tester les différentes conditions.
-
-### Triangle de Pascal (exercice +++)
-
-Voici le début du triangle de Pascal&nbsp;:
-
-```default
-1
-1  1
-1  2  1
-1  3  3  1
-1  4  6  4  1
-1  5  10 10 5  1
-[...]
-```
-
-Déduisez comment une ligne est construite à partir de la précédente. Par exemple, à partir de la ligne 2 (`1 1`), construisez la ligne suivante (ligne 3&nbsp;: `1 2 1`) et ainsi de suite.
-
-Implémentez cette construction en Python. Généralisez à l'aide d'une boucle.
-
-Écrivez dans un fichier `pascal.out` les 10 premières lignes du triangle de Pascal.
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1Cm9B7BMM_dyekeBanDFUhekuJLqQr2Fr#forceEdit=true&sandboxMode=true).

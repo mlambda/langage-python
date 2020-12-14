@@ -1646,37 +1646,6 @@ Pour aller plus loin, vous pouvez consulter le très bon [article](https://dbade
 
 </div>
 
-## Exercices
+## Travaux pratiques
 
-*Conseil* : pour ces exercices, créez des scripts puis exécutez-les dans un *shell*.
-
-
-### Classe `Rectangle`
-
-Téléchargez le script [`rectangle.py`](https://raw.githubusercontent.com/m09/langage-python/master/data/rectangle.py) qui implémente la classe `Rectangle`.
-
-Complétez le programme principal pour que le script :
-
-- crée une instance `rectangle` de la classe `Rectangle` ;
-- affiche les attributs d'instance `largeur`, `longueur` et `couleur` ;
-- calcule et affiche la surface de `rectangle` ;
-- affiche une ligne vide ;
-- change le rectangle en carré de 30 m de côté ;
-- calcule et affiche la surface de ce carré ;
-- crée une autre instance `rectangle2` aux dimensions et à la couleur que vous souhaitez (soyez créatif !) et qui affiche les attributs et la surface de ce nouveau rectangle.
-
-
-### Classe `Rectangle` améliorée
-
-Entraînez-vous avec la classe `Rectangle`. Créez la méthode `calcule_perimetre()` qui calcule le périmètre d'un objet rectangle. Testez sur un exemple simple (largeur = 10 m, longueur = 20 m).
-
-
-### Classe `Atome`
-
-Créez une nouvelle classe `Atome` avec les attributs `x`, `y`, `z` (qui contiennent les coordonnées atomiques) et la méthode `calcul_distance()` qui calcule la distance entre deux atomes. Testez cette classe sur plusieurs exemples.
-
-
-### Classe `Atome` améliorée
-
-Améliorez la classe `Atome` en lui ajoutant un nouvel attribut  `masse` qui correspond à la masse atomique ainsi qu'une nouvelle méthode  
-`.calcule_centre_masse()`. Redéfinissez le comportement avec `print()` (à l'aide de la méthode magique `.__str__()`) de manière à afficher les coordonnées et la masse de l'atome.
+Les travaux pratiques sont disponibles [en ligne](https://colab.research.google.com/drive/1Tgp3kRsElRsRM2237hxAbRnV-Dy_-8G_#forceEdit=true&sandboxMode=true).
