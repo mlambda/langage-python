@@ -142,108 +142,44 @@ Renvoyer un n-uplet ou une liste de deux éléments (ou plus) est très pratique
 
 Cela permet de récupérer plusieurs valeurs renvoyées par une fonction et de les affecter à la volée à des variables différentes.
 
-## Arguments positionnels et arguments par mot-clé
+## Définition de fonction avec des valeurs par défaut aux arguments
 
-Jusqu'à maintenant, nous avons systématiquement passé le nombre d'arguments que la fonction attendait. Que se passe-t-il si une fonction attend deux arguments et que nous ne lui en passons qu'un seul&nbsp;?
+Il est possible de passer un ou plusieurs argument(s) de manière facultative et de leur attribuer une valeur par défaut&nbsp;:
 
 ```python
->>> def fois(x, y):
-...     return x * y
+>>> def fct(a, b=1):
+...     return a + b
 ...
->>> fois(2, 3)
+>>> fct(3)
+4
+>>> fct(3, 3)
 6
->>> fois(2)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: fois() missing 1 required positional argument: 'y'
 ```
 
-On constate que passer un seul argument à une fonction qui en attend deux conduit à une erreur.
+## Appel de fonction en positionnel ou par mot-clé
 
-<div class="definition">
-Lorsqu'on définit une fonction `def fct(x, y):` les arguments `x` et `y` sont appelés **arguments positionnels** (en anglais *positional arguments*). Il est strictement obligatoire de les préciser lors de l'appel de la fonction. De plus, il est nécessaire de respecter le même ordre lors de l'appel que dans la définition de la fonction. Dans l'exemple ci-dessus, `2` correspondra à `x` et `3` correspondra à `y`. Finalement, tout dépendra de leur position, d'où leur qualification de positionnel.
-</div>
-
-Mais il est aussi possible de passer un ou plusieurs argument(s) de manière facultative et de leur attribuer une valeur par défaut&nbsp;:
+Il est possible d'utiliser deux syntaxes pour appeler une fonction :
 
 ```python
->>> def fct(x=1):
-...     return x
+>>> def fct(a, b):
+...     return a - b
 ...
->>> fct()
+>>> fct(3, 2)
 1
->>> fct(10)
-10
+>>> fct(a=3, b=2)
+1
 ```
 
-<div class="definition">
-Un argument défini avec une syntaxe `def fct(arg=val):` est appelé **argument par mot-clé** (en anglais *keyword argument*). Le passage d'un tel argument lors de l'appel de la fonction est facultatif. Ce type d'argument ne doit pas être confondu avec les arguments positionnels présentés ci-dessus, dont la syntaxe est `def fct(arg):`.
-</div>
-
-Il est bien sûr possible de passer plusieurs arguments par mot-clé&nbsp;:
+La première syntaxe est dite positionnelle, la deuxième utilise le nom des arguments. L'ordre dans ce cas n'importe pas :
 
 ```python
->>> def fct(x=0, y=0, z=0):
-...     return x, y, z
+>>> def fct(a, b):
+...     return a - b
 ...
->>> fct()
-(0, 0, 0)
->>> fct(10)
-(10, 0, 0)
->>> fct(10, 8)
-(10, 8, 0)
->>> fct(10, 8, 3)
-(10, 8, 3)
-```
-
-On observe que pour l'instant, les arguments par mot-clé sont pris dans l'ordre dans lesquels on les passe lors de l'appel. Comment pourrions-nous faire si on souhaitait préciser l'argument par mot-clé `z` et garder les valeurs de `x` et `y` par défaut&nbsp;? Simplement en précisant le nom de l'argument lors de l'appel&nbsp;:
-
-```python
->>> fct(z=10)
-(0, 0, 10)
-```
-
-Python permet même de rentrer les arguments par mot-clé dans un ordre arbitraire&nbsp;:
-
-```python
->>> fct(z=10, x=3, y=80)
-(3, 80, 10)
->>> fct(z=10, y=80)
-(0, 80, 10)
-```
-
-Que se passe-t-il lorsque nous avons un mélange d'arguments positionnels et par mot-clé&nbsp;? Et bien les arguments positionnels doivent toujours être placés avant les arguments par mot-clé&nbsp;:
-
-```python
->>> def fct(a, b, x=0, y=0, z=0):
-...     return a, b, x, y, z
-...
->>> fct(1, 1)
-(1, 1, 0, 0, 0)
->>> fct(1, 1, z=5)
-(1, 1, 0, 0, 5)
->>> fct(1, 1, z=5, y=32)
-(1, 1, 0, 32, 5)
-```
-
-On peut toujours passer les arguments par mot-clé dans un ordre arbitraire à partir du moment où on précise leur nom. Par contre, si les deux arguments positionnels a et b ne sont pas passés à la fonction, Python renvoie une erreur.
-
-```python
->>> fct(z=0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: fct() missing 2 required positional arguments: 'a' and 'b'
-```
-
-<div class="conseils">
-Préciser le nom des arguments par mot-clé lors de l'appel d'une fonction est une pratique que nous vous recommandons. Cela les distingue clairement des arguments positionnels.
-</div>
-
-L'utilisation d'arguments par mot-clé est habituelle en Python. Elle permet de modifier le comportement par défaut de nombreuses fonctions. Par exemple, si on souhaite que la fonction `print()` n'affiche pas un retour à la ligne, on peut utiliser l'argument `end`&nbsp;:
-
-```python
->>> print("Message ", end="")
-Message >>>
+>>> fct(a=3, b=2)
+1
+>>> fct(b=2, a=3)
+1
 ```
 
 ## Variables locales et variables globales
