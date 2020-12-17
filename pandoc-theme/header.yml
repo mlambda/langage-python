@@ -2,7 +2,9 @@
 title: Langage Python
 titlegraphic: img/python-logo.png
 subtitle: Support de formation
-author: Hugo Mougard
+author:
+  - Hugo Mougard
+  - François-Marie Giraud
 mainfont: Fira Sans Light
 sansfont: Fira Sans Light
 monofont: Fira Mono
