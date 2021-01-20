@@ -4,6 +4,6 @@ Ce support de formation est une adaptation de l'excellent cours [*Introduction �
 
 Je remercie vivement Patrick Fuchs et Pierre Poulain pour avoir mis leur travail d'excellente qualité à disposition du public avec une [licence libre (CC BY-SA 3.0 FR)](https://creativecommons.org/licenses/by-sa/3.0/fr/).
 
-Les sources de ce support sont [disponibles sur GitHub](https://github.com/m09/langage-python). N'hésitez pas à utiliser GitHub pour toute question ou remarque relative à ce cours (l'onglet [*Discussions*](https://github.com/m09/langage-python/discussions) permet de créer des sujets de discussion).
+Les sources de ce support sont [disponibles sur GitHub](https://github.com/nzmognzmp/langage-python). N'hésitez pas à utiliser GitHub pour toute question ou remarque relative à ce cours (l'onglet [*Discussions*](https://github.com/nzmognzmp/langage-python/discussions) permet de créer des sujets de discussion).
 
 Ce support est sous licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr).
