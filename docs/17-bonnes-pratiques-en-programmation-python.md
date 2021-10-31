@@ -402,7 +402,7 @@ $ conda install -c conda-forge pycodestyle pydocstyle pylint
 Les outils `pycodestyle`, `pydocstyle` et `pylint` sont des **linters**, c'est-à-dire des programmes qui vont chercher les sources potentielles d'erreurs dans un code informatique. Ces erreurs peuvent être des erreurs de style (PEP 8 et 257) ou des erreurs logiques (manipulation d'une variable, chargement de module).
 </div>
 
-Voici le contenu du script [`script-quality-not-ok.py`](https://raw.githubusercontent.com/m09/langage-python/master/data/script-quality-not-ok.py) que nous allons analyser par la suite :
+Voici le contenu du script [`script-quality-not-ok.py`](https://raw.githubusercontent.com/mlambda/langage-python/master/data/script-quality-not-ok.py) que nous allons analyser par la suite :
 
 ```python
 """Un script de multiplication.
@@ -531,7 +531,7 @@ Ligne 17. Le module `os` est chargé mais pas utilisé (ligne 4 du script).
 
 Ligne 20. `pylint` produit également une note sur 10. Ne soyez pas surpris si cette note est très basse (voire négative) la première fois que vous analysez votre script avec `pylint`. Cet outil fournit de nombreuses suggestions d'amélioration et la note attribuée à votre script devrait rapidement augmenter. Pour autant, la note de 10 est parfois difficile à obtenir. Ne soyez pas trop exigeant.
 
-Une version améliorée du script précédent est disponible [en ligne](https://raw.githubusercontent.com/m09/langage-python/master/data/script-quality-ok.py).
+Une version améliorée du script précédent est disponible [en ligne](https://raw.githubusercontent.com/mlambda/langage-python/master/data/script-quality-ok.py).
 
 ## Organisation du code
 
